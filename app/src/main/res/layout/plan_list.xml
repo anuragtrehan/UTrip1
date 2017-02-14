@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_weight="30"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="Monument Walk Tour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/place_name"
+            android:textStyle="normal|bold"
+            android:layout_weight="20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/distance"
+            android:layout_weight="40"
+            android:text="20 min"
+            android:paddingLeft="50dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:layout_weight="40">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/star"
+                android:id="@+id/imageView2"
+                android:layout_weight="80"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rating"
+                android:layout_weight="20"
+                android:text="5.4"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="12sp"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_weight="70"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:weightSum="100">
+
+            <TextView
+                android:text="11:00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/init_time"
+                android:layout_weight="50"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="10:00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/end_time"
+                android:layout_weight="50"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:id="@+id/place_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--app:srcCompat="@drawable/preview"-->
+            <!--android:layout_weight="40" />-->
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/place_image"
+            android:layout_weight="40"
+            app:srcCompat="@drawable/preview"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

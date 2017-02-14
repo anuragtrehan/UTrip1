@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plan__select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="anurag.com.utrip1.Activity.Plan_SelectActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <TextView
+        android:text="Select You Plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkWhite"
+        android:textSize="40sp"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_trans">
+
+        <TextView
+            android:text="Build Your Own"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/build"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkWhite"
+            android:background="@drawable/button_trans"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="The First Timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkWhite"
+            android:background="@drawable/button_trans"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/budget"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkWhite"
+            android:background="@drawable/button_trans"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="The Luxury Traveler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/luxury"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkWhite"
+            android:background="@drawable/button_trans"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+</LinearLayout>
